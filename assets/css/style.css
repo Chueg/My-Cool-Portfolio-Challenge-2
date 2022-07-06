@@ -1,0 +1,206 @@
+/*universal settings*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+
+
+/*The background of every body will be*/
+body {
+    background-color: lightcyan;
+}
+
+/*changes text color of a*/
+a {
+    flex:1 1 auto;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/*changes font size of p*/
+p {
+    font-size: 16px;
+}
+
+main{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/*all header classes default to this color and font*/
+.header {
+    padding: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: teal;
+    color: #ffffff;
+    border-style: solid;
+    border-color: black;
+    border-top: 4px;
+    
+}
+
+
+/*Header h1 customization*/
+ 
+/*makes h1 in header class inline/font48px */
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+
+
+
+
+.bigBoxy
+{
+    height:auto;
+    width:auto;
+    padding:10px;
+    background-color: black;
+    border-radius: 4px;
+}
+
+/*header nav customization*/
+
+/*header class div will have custom font and sizes*/
+.header nav {
+    padding-top: 15px;
+    margin-right: 100px;
+    float: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+/*changes list style type*/
+.header nav ul {
+    list-style-type: none;
+}
+/*establishes margin and display of li in header class*/
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+
+
+
+.avatar{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+
+
+.about-me {
+
+    width:auto;
+    height: auto;
+    padding:20px;
+}
+.about-me h2{
+
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-size: 50px;
+}
+.about-me p{
+    padding: 20px;
+    background-color:royalblue;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    width: 1000px;
+}
+
+
+
+.mega{
+    position:relative;
+    right:0px;
+    flex-wrap: wrap;
+flex: 1 1 auto;
+}
+
+
+
+.my-works{
+    flex-direction: column;
+}
+
+
+.my-works h3{
+    padding-left: 20px;
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+
+.my-works figure{
+    display: flex;
+    width:600px;
+    height:200px;
+    border-style: solid;
+    border-color: black;
+    align-items: center;
+}
+.my-works figure p{
+    flex: 1 1 auto;
+    text-align: right;
+    padding-top: 40px;
+    font-size: 30px;
+    padding-right: 30px;
+    font-style: italic;
+}
+
+
+.contact{
+    text-align: center;
+    color:black;
+    
+}
+
+.contact h4{
+    padding-left: 20px;
+    padding-top: 400px;
+    padding-bottom: 40px;
+    font-size: 50px;
+}
+.contact p{
+    font-size: 28px;
+}
+.contact a{
+    text-decoration: underline;
+    font-size: 32px;
+    color: blue;
+}
+
+
+
+/*customizes the footer*/
+.footer {
+    position:relative;
+    bottom:0px;
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+/*customizes h6 in the footer*/
+.footer h6 {
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    main,nav{
+        flex-direction: column;
+    }
+    .about-me p{
+        width:1000px;
+    }
+}
